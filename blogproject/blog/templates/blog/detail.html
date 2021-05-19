@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<br>
+<h1> * THIS IS DETAILS * </h1>
+<br>
+<br>
+<br>
+<br>
+
+<div class="container jumbotron">
+    <h1>{{ blog.title }}</h1>
+    <p>{{ blog.pub_date }}</p>
+    <p>{{ blog.body }}</p>
+    <a href="{% url 'home' %}">Go Back</a>
+</div>
+
+
+
+
+{% endblock %}
